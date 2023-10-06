@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+table,th,td{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+table{
+    margin-right: 50px;
+    text-align: center;
+}
+img{
+    width: 110%;
+}
+body{
+    background-color: #f5f5dc;
+    font-family: "HGS創英角ｺﾞｼｯｸUB,serif";
+}
+h1{
+    font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+    text-align: center;
+    background-color: #7db8f2;
+}
+th{
+    background-color: #f5f5d0;
+    font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+    text-align: center;
+}
+td{
+    background-color: #e9e9c4;
+    text-align: center;
+}
+body{
+    vertical-align: middle;
+}
+k4sen{
+    margin-left: 50px;
+    width: 15%;
+    height: 18%;
+}
+
