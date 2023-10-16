@@ -1,0 +1,13 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+}
+#text{
+    font-size: 0.7rem;
+}
+input[type]{
+    margin-right: 0.5rem;
+}
+input[type="text"]{
+    border: 1px red soild;
+}

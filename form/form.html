@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <title>入力フォーム</title>
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <h1>会員登録ページ</h1>
+        <p>以下の情報を入力し、確認ボタンを押してください</p>
+        <fieldset>
+            <legend>お客様情報</legend>
+            <label>姓　　　　　　　: <input type="text" name="first_name"></label><br>
+            <label>名　　　　　　　: <input type="text" name="last_name"></label><br>
+            <label>住所　　　　　　: <input type="text" name="address"></label><br>
+            <label>メールアドレス　: <input type="email" name="email"></label><br>
+            <label>電話番号　　　　: <input type="tel" name="tel"></label><br>
+            <label>生年月日　　　　: <input type="date" name="birthday" value="1990-01-01"></label><br>
+            <label>年齢　　　　　　: <input type="number" name="age" min="0" max="50"></label> 歳<br>
+            <label>性別　　　　　　: <input type="radio" name="gender" value="man">男</label>
+            <label><input type="radio" name="gender" value="woman">女</label>
+            <label><input type="radio" name="gender" value="other">その他</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>パスワード</legend>
+            <label>英数字８文字以内で入力してください。<br>
+            <input type="password" name="password"></label><br>
+            <label>確認のためもう一度入力してください。<br>
+            <input type="password" name="password_confilm"></label><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>希望メールマガジン</legend>
+            <label><input type="checkbox" name="magazine">IT</label>
+            <label><input type="checkbox" name="magazine">営業</label>
+            <label><input type="checkbox" name="magazine">接客</label>
+            <label><input type="checkbox" name="magazine">医療</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>利用規約</legend>
+            <label><a href="terms.html" target="_blank" id="text">利用規約を確認する</a></label><br>
+            <label><input type="checkbox" name="terms" value="agree">規約に同意する</label>
+        </fieldset>
+    </form>    
+</body>
+</html>
