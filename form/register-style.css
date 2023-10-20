@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    background-color: bisque;
+}
+table{
+    border : solid 1px black;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: auto;
+    color: white;
+    background-color: burlywood;
+    border: solid 3px white;
+}
+td{
+    background-color: #F2F2F2;
+    border: solid 3px white;
+}
+.TextSmall{
+    font-size: xx-small;
+    text-align: bottom;
+}
+.TextLittleSmall{
+    font-size: small;
+    text-align: bottom;
+    border: 0px;
+    background-color: red;
+    padding: 1.5px;
+    border-radius: 0.5rem;
+}
