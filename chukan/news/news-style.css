@@ -1,0 +1,25 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+img{
+    width: 35rem;
+    padding-left: 1rem;
+}
+.naiyou{
+    display: flex;
+    padding-bottom: 4rem;
+}
+.bun{
+    /* text-align: center; */
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+}

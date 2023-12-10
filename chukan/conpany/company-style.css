@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+.body{
+    background-color: black;
+}
+
+/* ----- */
+.header {
+    width: 100%;
+    background-color: black;
+    margin: 0%;
+    border-bottom: 4px solid white;
+}
+/* navタグ */
+
+    /* ナビゲーションを横並びにする */
+    nav ul {
+        display: flex;
+    }
+    /* MORIJYOBI と空間を開けて並べる */
+    nav ul .title {
+        width: 60%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    nav ul .li {
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+    }
+    /* リストのデコレーショ ンを消す */
+    ul {
+        margin: 0rem;
+        list-style-type: none;
+        height: 3.48rem;
+        /* margin: 0%; */
+    }
+    /* aタグの色と下線消し */
+    li a {
+        text-decoration: none;
+    }
+    li .a {
+        position: relative;
+        color: white;
+        /* color: black; */
+        transition: width .2s;
+        &::after {
+            position: absolute;
+            /* right: 0;
+            bottom: 0;
+            left: 0; */
+            display: block;
+            /* width: 0;
+            height: 5px; */
+            margin: auto;
+            content: "";
+            background-color: black;
+            /* transition: width 1s; */
+          }
+        &:hover {
+            transition: color 1.2s;
+            color: black;
+            transition: background-color 1.5s ;
+            background-color: white;
+            /* color: white; */
+            &::after {
+                width: 100%;
+              }
+        }
+    }
+    /* タイトル文字の間隔開け */
+    li .aTitle {
+        color: white;
+        letter-spacing: 0.5rem;
+        font-family: 'Zen Antique Soft', serif;
+        margin: 0%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+        height: 1rem;
+    }
+    /* aタグの範囲設定 */
+    li .a {
+        padding: 1rem 1.3rem 1rem 1.3rem;
+    }
+    /* navタグ固定 */
+
+/* ----- */
+
+.midasi{
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+h2{
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 20rem;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    color: white;
+
+}
+.one{
+    width: 40rem;
+    padding-left: 3rem;
+    box-shadow: 35rem 8rem 0px 0 dimgray;
+}
+.naiyou{
+    text-align: center;
+    /* margin: auto; */
+    /* padding: 1rem 10rem 1rem 10rem; */
+    width: 30rem;
+    position: relative;
+    top: 10rem;
+    left: 2.7rem;
+    font-size: 1.3rem;
+    color: white;
+}
+/* .url{
+    padding-left: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+} */
+.color{
+    /* text-decoration: none; */
+    color: white;
+}
+.box{
+    background-color: black;
+}
+.A{
+    display: flex;
+}
+.span{
+    text-align: center;
+    /* text-decoration: underline 2px cornsilk; */
+    font-size: 1.7rem;
+}
+
+/* ----- */
+.B{
+    display: flex;
+}
+#cap{
+    padding-top: 0.6rem;
+}
+#kita{
+    padding-top: 1rem;
+}
+.two{
+    width: 40rem;
+    padding-left: 3rem;
+    box-shadow: 35rem 8rem 0rem 0rem dimgray;
+}
+.naiyou2{
+    text-align: center;
+    /* margin: auto; */
+    /* padding: 1rem 10rem 1rem 10rem; */
+    padding-top: 1rem;
+    width: 30rem;
+    position: relative;
+    top: 10rem;
+    left: 2.7rem;
+    font-size: 1.3rem;
+    color: white;
+}
+section{
+    padding-bottom: 5rem;
+}

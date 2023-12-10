@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+.content{
+    background-color: #FFF2F9;
+}
+
+.midaisi{
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem;
+}
+.keitai{
+    text-align: center;
+    padding: 1rem;
+}
+/* ----- */
+.pokeberu{
+    margin: auto;
+    width: 40rem;
+    padding: 0.5rem;
+}
+.garake{
+    padding-top: 1rem;
+    margin: auto;
+    width: 40rem;
+    padding: 0.5rem;
+}
+.sumaho{
+    padding-top: 1rem;
+    margin: auto;
+    width: 40rem;
+    padding: 0.5rem;
+}
+/* ----- */
+.button{
+    background-color: blue;
+    display: inline-block;
+    /* display: flex; */
+    clip-path: polygon(1.5rem 0.75rem,0 0, 0 1.5rem);
+    padding: 0.73rem;
+    cursor: pointer;
+}
+.button2{
+    background-color: blue;
+    display: inline-block;
+    /* display: flex; */
+    clip-path: polygon(1.5rem 0.75rem,0 0, 0 1.5rem);
+    padding: 0.73rem;
+    cursor: pointer;
+}
+.button3{
+    background-color: blue;
+    display: inline-block;
+    /* display: flex; */
+    clip-path: polygon(1.5rem 0.75rem,0 0, 0 1.5rem);
+    padding: 0.73rem;
+    cursor: pointer;
+}
+/* ----- */
+.button.angle{
+    background-color: blue;
+    clip-path: polygon(0 0, 1.5rem 0, 0.75rem 1.5rem);
+}
+.button2.angle{
+    background-color: blue;
+    clip-path: polygon(0 0, 1.5rem 0, 0.75rem 1.5rem);
+}
+.button3.angle{
+    background-color: blue;
+    clip-path: polygon(0 0, 1.5rem 0, 0.75rem 1.5rem);
+}
+/* ------ */
+.box{
+    display: flex;
+    /* padding-left: 10rem; */
+    padding-bottom: 1rem;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+}
+/*----- */
+.menu1{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height: 100%;
+    display: none;
+    letter-spacing: 0.1rem;
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.3em;
+}
+.menu2{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height: 100%;
+    display: none;
+    letter-spacing: 0.1rem;
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.3em;
+}
+.menu3{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height: 100%;
+    display: none;
+    letter-spacing: 0.1rem;
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.3em;
+}
+/* ----- */
+.setumei{
+    /* padding-left: 27rem; */
+    font-size: 1.7rem;
+    font-family: 'Hina Mincho', serif;
+    margin: auto;
+    /* &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    } */
+}
+.setumei2{
+    /* display: flex; */
+    /* padding-left: 37rem; */
+    font-size: 1.7rem;
+    font-family: 'Hina Mincho', serif;
+    margin: auto;
+    /* &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    } */
+}
+.setumei3{
+    /* display: flex; */
+    /* padding-left: 37rem; */
+    font-size: 1.7rem;
+    font-family: 'Hina Mincho', serif;
+    margin: auto;
+    /* &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    } */
+}
+/* ----- */
+.margin{
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: underline 3px black;
+}
+/* ----- */
+.url{
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+/* ----- */
+.matome{
+    text-align: center;
+    font-size: 1.5rem;
+}
+table{
+    margin: auto;
+}
+#nen{
+    font-size: 2rem;
+}
+.size{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.right{
+    border-right: 2px solid black;
+}

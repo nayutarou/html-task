@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* bodyタグ */
+
+body {
+    min-width: 700px;
+    /* font-family: "MSゴシック" serif; */
+    /* padding: 0px 20px 0px 20px; */
+}
+
+/* hetterタグ　img */
+.header {
+    width: 100%;
+    background-color: #FFC0CB;
+    margin: 0%;
+}
+
+.background {
+    background-image: url(./img/原神拝啓.png);
+    background-position: center;
+    text-align: center;
+}
+
+.background img {
+    height: 10rem;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.header img {
+    display: inline-block;
+    /* width: 30rem; */
+}
+.background{
+    padding: 0%;
+    margin: 0%;
+}
+/* navタグ */
+
+    /* ナビゲーションを横並びにする */
+    nav ul {
+        display: flex;
+    }
+    /* MORIJYOBI と空間を開けて並べる */
+    nav ul .title {
+        width: 60%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    nav ul .li {
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+    }
+    /* リストのデコレーショ ンを消す */
+    ul {
+        margin: 0rem;
+        list-style-type: none;
+        height: 3.48rem;
+        /* margin: 0%; */
+    }
+    /* aタグの色と下線消し */
+    li a {
+        text-decoration: none;
+    }
+    li .a {
+        position: relative;
+        color: white;
+        /* color: black; */
+        transition: width .2s;
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 0;
+            height: 5px;
+            margin: auto;
+            content: "";
+            background-color: black;
+            transition: width 1s;
+          }
+        &:hover {
+            transition: color 1.5s;
+            color: black;
+            background-color: #FFB6C1;
+            /* color: white; */
+            &::after {
+                width: 100%;
+              }
+        }
+    }
+    /* タイトル文字の間隔開け */
+    li .aTitle {
+        color: black;
+        letter-spacing: 0.5rem;
+        font-family: 'Zen Antique Soft', serif;
+        margin: 0%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+        height: 1rem;
+    }
+    /* aタグの範囲設定 */
+    li .a {
+        padding: 1rem 1.3rem 1rem 1.3rem;
+    }
+    /* navタグ固定 */
+    
+/* パンくずリスト */
+    .yajirusi {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        padding: 0.5rem;
+        padding-left: 4rem;
+        /* background-color: #fbacc8; */
+        background-color: bisque;
+        border-bottom: 1px solid black;
+    }
+    .yajirusi a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin: auto;
+        font-family: "MSゴシック", serif;
+        font-size: 20px;
+        &:visited{
+            color: red;
+        }
+    }
+    .yajirusi #li::after {
+        content: ">";
+        padding: 1rem;
+    }

@@ -1,0 +1,20 @@
+/*記述済みの部分は変更しないでください！*/
+
+@charset "utf-8";
+
+.mark-list {
+    /* このリストマークは変えない */
+    display: block;
+    list-style: "★";
+    padding-bottom: 3rem;
+}
+.lii{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.padding{
+    padding-top: 3rem;
+}
+p{
+    font-size: 1.2rem;
+}
