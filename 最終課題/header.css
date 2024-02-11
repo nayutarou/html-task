@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.bg-1 {
+    background-color: #7AC5EF;
+}
+
+.bg-2 {
+    background-color: white;
+}
+
+.bg-3 {
+    background-color: black;
+}
+
+
+header .flex {
+    display: flex;
+}
+
+nav {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 1px 2px 3px dimgray;
+    background-color: white;
+}
+
+
+nav ul {
+    margin: 0 80px 0 auto;
+}
+
+.z-index1 {
+    z-index: 1;
+}
+
+nav img {
+    z-index: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 0.2em;
+    /* z-index: 1000; */
+    /* border-bottom: 1.5px black; */
+    /* mix-blend-mode: multiply; */
+}
+
+header li {
+    /* text-decoration: none; */
+    list-style: none;
+    margin: auto 0 auto 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px solid black;
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+header li a:hover {
+    /* border-radius: 50%; */
+    /* background-color: #7AC5EF; */
+    background-image: url(img/radar3.jpg);
+    background-size: contain;
+    background-position-x: center;
+    /* height: auto;
+    height: 100%; */
+    padding: 1em 0;
+    /* font-weight: bolder; */
+    color: black;
+}
+
+
+#li-left {
+    border-right: 2px solid black;
+}

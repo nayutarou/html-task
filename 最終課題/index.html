@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Yusei+Magic&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+</head>
+
+<body class="bg-1"><!-- 背景は大体は白を使う -->
+
+    <!--        header            -->
+
+    <header>
+        <nav class="flex">
+            <a href="#"><img src="img/top-radao.png" alt="radar"></a>
+            <ul class="flex">
+                <li><a href="#">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li><!-- この四つのliはホバーすると少し右に傾く(transform: rotate()を使う;) -->
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li id="li-left"><a href="transion.html">TRANSION</a></li>
+            </ul>
+        </nav>
+        <div class="flex">
+            <div class="header z-index1">
+                <img class="img_down" src="img/radar_down2.png" alt="radar_down">
+                <!-- らっだぁのアイコンが落ちてくる(animationを使う) 背景は白 高さは500px-->
+            </div>
+            <div id="header_radar" class="d-none add_radar">
+                <h1>らっだぁ</h1>
+                <h2>rader2525</h2>
+            </div>
+        </div>
+    </header>
+
+    <!--    main       -->
+
+    <main class="z-index1 bg-2">
+
+        <!--  news   -->
+
+
+        <div class="news flex"><!-- 高さは760px flexを使う -->
+            <div class="ivent"><!-- 高さは500px -->
+                <h1>News
+                    <span style="font-size: 0.5em;">お知らせ</span>
+                </h1>
+                <ul>
+                    <!-- 直近半年のイベント　必要に応じてリンク付け -->
+                    <li class="top-border">
+                        <h2>2023年9月9日& 10日</h2>
+                        <br><a
+                            href="https://getnews.jp/mcn/signalzero/2023-09/#:~:text=%E3%81%97%E3%81%90%E3%81%AA%E3%82%8B%E3%81%9C%E3%82%8D,%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%20%E5%9B%BD%E7%AB%8B%E5%A4%A7%E3%83%9B%E3%83%BC%E3%83%AB">
+                            しぐなるぜろ開催</a>
+                    </li>
+                    <li>
+                        <h2>2023年3月10日~3月26日</h2>
+                        <br><a href="https://tokyotower.red-brand.jp/event/red_rader/">東京タワーコラボ開催</a>
+                    </li>
+                    <li>
+                        <h2>2023年1月29日</h2>
+                        <br><a
+                            href="https://store.line.me/stickershop/product/22047940/ja?utm_source=gnsh_stickerDetail">動くlineスタンプ発売</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="twitter-x">
+                <h1>Twitter</h1>
+                <div class="twitter">
+                    <a class="twitter-timeline" data-width="500" data-height="500"
+                        href="https://twitter.com/radaokun?ref_src=twsrc%5Etfw"
+                        data-chrome="nofooter noheader noscrollbar">Tweets by radaokun</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  plofile  -->
+
+
+        <div class="plofile background" style="margin-top: 4em;"><!-- flexをかける 高さ690px -->
+            <div class="border-h1">
+                <h1 class="h1-p">
+                    Profile<br>
+                    <span style="font-size: 0.5em;">人物紹介</span>
+                </h1>
+            </div>
+            <div class="plofile-radar flex">
+                <div class="radar_img">
+                    <img src="img/radar-plofile.png" alt="radar">
+                </div>
+                <div class="explanation">
+                    <section>
+                        <h2 class="h2-f">らっだぁ</h2>
+                        <p>
+                            <!-- 説明文 -->
+                            ニコニコ動画、YouTube、Twitchで活動している配信者「らっだぁ」。<br>
+                            昔は「青鬼 in minecraft」などのリスナーと行う。<br>
+                            マインクラフト系企画をやっていることが多かったが、<br>
+                            2023年現在ではストグラなどのGTAを始めとした様々なジャンルのゲームを行っている。
+
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- movie -->
+
+
+        <div class="movie"><!-- スライド　動画はリンク付けをする　高さ880px -->
+            <h1 class="m-h1">
+                Movie<br>
+                <span style="font-size: 0.5em;">おすすめ動画</span>
+            </h1>
+            <div>
+                <div id="slide1">
+                    <ul class="slide_1 flex ">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide1" src="img/movie2.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onClick="ivent1_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide2" src="img/movie1.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent1_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide3" src="img/movie3.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="slide2">
+                    <ul class="slide_2 flex slide-none2">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide1" src="img/movie1.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="ivent2_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide2" src="img/movie3.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent2_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide3" src="img/movie2.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="slide3">
+                    <ul class="slide_2 flex slide-none3">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide1" src="img/movie3.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="ivent3_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide2" src="img/movie2.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent3_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide3" src="img/movie1.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+    </main>
+
+
+    <!--     footer        -->
+
+
+
+    <footer class="footer bg-3"><!-- 高さは100px程度 背景は黒 -->
+       <small>&copy; Rader2525 All right reserved.</small>
+        <a class="margin-a" href="https://twitter.com/radaokun" target="_blank">
+            <img class="icon" src="img/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNdVSK1uy2xFHTaXZYXopw" target="_blank">
+            <img class="icon2" src="img/youtube.png" alt="youtube" >
+        </a>
+        <a href="https://www.instagram.com/radaokun/" target="_blank">
+            <img class="icon3" src="img/instagram.png" alt="insta">
+        </a>
+    </footer>
+
+
+    <!--  script    -->
+    <script>
+        const showLater = document.getElementById("header_radar");
+        // 表示・非表示を切り替える関数
+        function switchDisplay() {
+            showLater.classList.remove("d-none");
+        }
+        // 上記関数を3秒後に実行
+        setTimeout(() => {
+            switchDisplay();
+        }, 3000);
+
+
+        // slide
+
+        const slide1 = document.getElementById("slide1");
+        const slide2 = document.getElementById("slide2");
+        const slide3 = document.getElementById("slide3");
+
+        function ivent1_1() {
+            slide1.classList.add("slide-none");
+            slide2.classList.remove("slide-none");
+        }
+        function ivent1_2() {
+            slide1.classList.add("slide-none")
+            slide3.classList.remove("slide-none")
+        }
+        function ivent2_1() {
+            slide2.classList.add("slide-none")
+            slide3.classList.remove("slide-none")
+        }
+        function ivent2_2() {
+            slide2.classList.add("slide-none")
+            slide1.classList.remove("slide-none")
+        }
+        function ivent3_1() {
+            slide3.classList.add("slide-none")
+            slide1.classList.remove("slide-none")
+        }
+        function ivent3_2() {
+            slide3.classList.add("slide-none")
+            slide2.classList.remove("slide-none")
+        }
+
+    </script>
+
+</body>
+
+</html>

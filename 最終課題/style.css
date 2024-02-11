@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.bg-1 {
+    background-color: #7AC5EF;
+}
+
+.bg-2 {
+    background-color: white;
+}
+
+.bg-3 {
+    background-color: black;
+}
+
+
+header .flex {
+    display: flex;
+}
+
+nav {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 1px 2px 3px dimgray;
+    background-color: white;
+}
+
+
+nav ul {
+    margin: 0 80px 0 auto;
+}
+
+.z-index1 {
+    z-index: 1;
+}
+
+nav img {
+    z-index: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 0.2em;
+    /* z-index: 1000; */
+    /* border-bottom: 1.5px black; */
+    /* mix-blend-mode: multiply; */
+}
+
+header li {
+    /* text-decoration: none; */
+    list-style: none;
+    margin: auto 0 auto 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px solid black;
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+header li a:hover {
+    /* border-radius: 50%; */
+    /* background-color: #7AC5EF; */
+    background-image: url(img/radar3.jpg);
+    background-size: contain;
+    background-position-x: center;
+    /* height: auto;
+    height: 100%; */
+    padding: 1em 0;
+    /* font-weight: bolder; */
+    color: black;
+}
+
+
+#li-left {
+    border-right: 2px solid black;
+}
+
+.header {
+    height: 520px;
+    margin-top: 70px;
+    display: block;
+    background-color: #7AC5EF;
+}
+
+.header .img_down {
+    margin-left: 5em;
+    width: auto;
+    height: 100%;
+    position: relative;
+    animation: move-to-left 2.5s linear forwards;
+}
+
+
+@keyframes move-to-left {
+    0% {
+        transform: rotateZ(0);
+        right: -37em;
+    }
+
+    80% {
+        transform: rotateZ(370deg);
+        right: 1em;
+    }
+
+    /* 90% {
+      transform:rotateZ(380deg);
+      right:40px;
+    } */
+    100% {
+        transform: rotateZ(360deg);
+        right: 1em;
+    }
+}
+
+
+.d-none {
+    display: none;
+}
+
+.add_radar {
+    position: relative;
+    text-align: center;
+    margin: auto 0 3em 0;
+    transition: 5s;
+    animation-name: radar-text;
+    animation-duration: 5s;
+    font-size: 3em;
+    font-family: 'Rampart One', sans-serif;
+
+    & h1,
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@keyframes radar-text {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main .flex {
+    display: flex;
+    margin: 0;
+    padding: 0%;
+}
+
+main {
+    padding-top: 3em;
+    padding-bottom: 6em;
+}
+
+
+
+
+/* naws */
+
+.news {
+    justify-content: space-around;
+}
+
+.news ul {
+    margin-top: 10px;
+    padding: 6.1em 8em;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.news li {
+    list-style: none;
+    font-size: 1em;
+    padding: 1.5em 0;
+    /* border-bottom: 2px solid black; */
+    line-height: 1em;
+    font-weight: bold;
+
+}
+
+.news h1 {
+    padding: 2em 0 1em 0;
+}
+
+.news h2 {
+    font-size: 1.3em;
+}
+
+.news a {
+    color: black;
+}
+
+.twitter {
+    max-height: 510px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+
+
+/* plofile */
+
+.plofile h1 {
+    /* display: inline-flex; */
+    padding: 0.5em;
+    /* text-align: center; */
+    margin-left: 5em;
+    /* margin-top: 1em; */
+    font-size: 3em;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(img/plofile-font.jpg);
+}
+
+.border-h1 {
+    border-top: 4px solid blue;
+}
+
+.plofile-radar {
+    justify-content: space-around;
+    background-color: #7AC5EF;
+
+    & p {
+        margin-top: 3em;
+    }
+}
+
+.plofile section {
+    margin-top: 2.4em;
+}
+
+.plofile p {
+    margin: 1.5em 0 auto 0;
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+
+/* font  */
+
+.h1-p {
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+}
+
+.h2-f {
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-weight: bolder;
+}
+
+/*    */
+.background {
+    width: 100%;
+    height: 540px;
+    background: url(img/p-bg.png) repeat-x;
+    background-position: 0 0;
+    -webkit-animation: bgroop 20s linear infinite;
+    animation: bgroop 20s linear infinite;
+    border-bottom: 3px solid blue;
+}
+
+@-webkit-keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1956px 0;
+    }
+}
+
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1956px 0;
+    }
+}
+
+
+
+/*  movie  */
+
+
+.movie {
+    height: 50em;
+    width: 100%;
+}
+
+.m-h1 {
+    text-align: center;
+    font-size: 4em;
+    padding: 1em;
+}
+
+
+.slide2 {
+    width: 55em;
+    height: 30em;
+}
+
+.slide3 {
+    width: 8em;
+    height: 20em;
+    object-position: left;
+    object-fit: cover;
+}
+
+.slide1 {
+    width: 8em;
+    height: 20em;
+    object-position: right;
+    object-fit: cover;
+}
+
+.slide1_1 {
+    text-align: start;
+    margin: auto 0;
+    justify-content: start;
+}
+
+.slide1_2 {
+    justify-content: center;
+    margin: auto;
+}
+
+.slide1_3 {
+    margin: auto 0;
+    text-align: end;
+    justify-content: end;
+}
+
+.slide_left,
+.slide_right {
+    /* position: relative; */
+    width: 2em;
+    height: 4em;
+    /* margin: 0; */
+    padding: 0;
+    margin: auto 0;
+    text-align: center;
+}
+
+.s-left,
+.s-right {
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie ul,
+.movie li {
+    list-style: none;
+}
+
+
+.slide-none {
+    display: none;
+}
+
+
+/*  footer  */
+
+footer {
+    color: white;
+    height: 7em;
+    margin: auto 0;
+    display: flex;
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer .icon {
+    margin: auto 2em auto auto;
+}
+
+footer .icon2 {
+    margin-right: 2em;
+}
+
+footer .icon3 {
+    margin-right: 8em;
+}
+
+footer img {
+    margin: auto 0;
+    width: auto;
+    height: 3em;
+}
+
+footer .margin-a {
+    margin: auto 0 auto auto;
+}
+
+footer a {
+    margin: auto 0;
+}
+
+footer small {
+    margin: auto 0 auto 4em;
+    font-size: 1em;
+    font-weight: bolder;
+}

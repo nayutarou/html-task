@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+main{
+    padding-top: 6em;
+}
+main img{
+    margin-top: 0.5em;
+    margin-left: 2em;
+    width: 13em;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+main .block{
+    width: 13em;
+    flex-wrap: wrap;
+}
+main .flex{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+main ul{
+    margin: auto;
+}
+main li{
+    font-size: 1.8em;
+}

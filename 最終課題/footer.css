@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*  footer  */
+
+footer {
+    color: white;
+    height: 7em;
+    margin: auto 0;
+    display: flex;
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer .icon {
+    margin: auto 2em auto auto;
+}
+
+footer .icon2 {
+    margin-right: 2em;
+}
+
+footer .icon3 {
+    margin-right: 8em;
+}
+
+footer img {
+    margin: auto 0;
+    width: auto;
+    height: 3em;
+}
+
+footer .margin-a {
+    margin: auto 0 auto auto;
+}
+
+footer a {
+    margin: auto 0;
+}
+
+footer small {
+    margin: auto 0 auto 4em;
+    font-size: 1em;
+    font-weight: bolder;
+}

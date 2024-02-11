@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Yusei+Magic&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="video.css">
+    <title>video</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="flex">
+            <a href="index.html"><img src="img/top-radao.png" alt="radar"></a>
+            <ul class="flex">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li><!-- この四つのliはホバーすると少し右に傾く(transform: rotate()を使う;) -->
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li id="li-left"><a href="transion.html">TRANSION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="movie"><!-- スライド　動画はリンク付けをする　高さ880px -->
+            <h1 class="m-h1">
+                Movie<br>
+                <span style="font-size: 0.5em;">おすすめ動画</span>
+            </h1>
+            <div>
+                <div id="slide1">
+                    <ul class="slide_1 flex ">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide1" src="img/movie2.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onClick="ivent1_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide2" src="img/movie1.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent1_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide3" src="img/movie3.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="slide2">
+                    <ul class="slide_2 flex slide-none2">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide1" src="img/movie1.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="ivent2_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide2" src="img/movie3.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent2_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide3" src="img/movie2.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="slide3">
+                    <ul class="slide_2 flex slide-none3">
+                        <li class="slide1_1">
+                            <a href="https://youtu.be/1CYaxbBJoyQ?si=rNJbdwK0n2EBe5L4" target="_blank">
+                                <img class="slide1" src="img/movie3.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="ivent3_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtu.be/n1KkQFxi1Rk?si=2gpCRrfpxT7kLUd3" target="_blank">
+                                <img class="slide2" src="img/movie2.png" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="ivent3_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtu.be/iXqeSo3N_ZI?si=mVs6Vp6ICPcpUFMw" target="_blank">
+                                <img class="slide3" src="img/movie1.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  おすすめ再生リスト -->
+        <div class="movie"><!-- スライド　動画はリンク付けをする　高さ880px -->
+            <h1 class="m-h1">
+                <span style="font-size: 0.5em;">おすすめ再生リスト</span>
+            </h1>
+            <div>
+                <div id="list1">
+                    <ul class="slide_1 flex ">
+                        <li class="slide1_1">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adX9j2hCVrgQm_y6_iqMkW8m&si=UxRfU5gI2ueohaeS" target="_blank">
+                                <img class="slide1" src="img/list1.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onClick="click1_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adV534WN8VvVdIRCxFn-W6TO&si=BDmL057l6hhxaP7N" target="_blank">
+                                <img class="slide2" src="img/list2.jpg" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="click1_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adUKeLsvblFg6DJa-Lr0UUs3&si=j1f0h3njaWYyeeTW" target="_blank">
+                                <img class="slide3" src="img/list3.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="list2">
+                    <ul class="slide_2 flex slide-none2">
+                        <li class="slide1_1">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adV534WN8VvVdIRCxFn-W6TO&si=BDmL057l6hhxaP7N" target="_blank">
+                                <img class="slide1" src="img/list2.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="click2_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adUKeLsvblFg6DJa-Lr0UUs3&si=j1f0h3njaWYyeeTW" target="_blank">
+                                <img class="slide2" src="img/list3.jpg" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="click2_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adX9j2hCVrgQm_y6_iqMkW8m&si=UxRfU5gI2ueohaeS" target="_blank">
+                                <img class="slide3" src="img/list1.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-none" id="list3">
+                    <ul class="slide_2 flex slide-none3">
+                        <li class="slide1_1">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adUKeLsvblFg6DJa-Lr0UUs3&si=j1f0h3njaWYyeeTW" target="_blank">
+                                <img class="slide1" src="img/list3.jpg" alt="movie2">
+                            </a>
+                        </li>
+                        <div class="s-left">
+                            <img class="slide_left" src="img/left.png" alt="" onclick="click3_1()">
+                        </div>
+                        <li class="slide1_2">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adX9j2hCVrgQm_y6_iqMkW8m&si=UxRfU5gI2ueohaeS" target="_blank">
+                                <img class="slide2" src="img/list1.jpg" alt="movie1">
+                            </a>
+                        </li>
+                        <div class="s-right">
+                            <img class="slide_right" src="img/right.png" alt="" onclick="click3_2()">
+                        </div>
+                        <li class="slide1_3">
+                            <a href="https://youtube.com/playlist?list=PLbF1amD14adV534WN8VvVdIRCxFn-W6TO&si=BDmL057l6hhxaP7N" target="_blank">
+                                <img class="slide3" src="img/list2.jpg" alt="movie3">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        // slide
+
+        const slide1 = document.getElementById("slide1");
+        const slide2 = document.getElementById("slide2");
+        const slide3 = document.getElementById("slide3");
+
+        function ivent1_1() {
+            slide1.classList.add("slide-none");
+            slide2.classList.remove("slide-none");
+        }
+        function ivent1_2() {
+            slide1.classList.add("slide-none")
+            slide3.classList.remove("slide-none")
+        }
+        function ivent2_1() {
+            slide2.classList.add("slide-none")
+            slide3.classList.remove("slide-none")
+        }
+        function ivent2_2() {
+            slide2.classList.add("slide-none")
+            slide1.classList.remove("slide-none")
+        }
+        function ivent3_1() {
+            slide3.classList.add("slide-none")
+            slide1.classList.remove("slide-none")
+        }
+        function ivent3_2() {
+            slide3.classList.add("slide-none")
+            slide2.classList.remove("slide-none")
+        }
+
+
+        //list
+        const list1 = document.getElementById("list1");
+        const list2 = document.getElementById("list2");
+        const list3 = document.getElementById("list3");
+
+        
+        function click1_1() {
+            list1.classList.add("slide-none");
+            list2.classList.remove("slide-none");
+        }
+        function click1_2() {
+            list1.classList.add("slide-none")
+            list3.classList.remove("slide-none")
+        }
+        function click2_1() {
+            list2.classList.add("slide-none")
+            list3.classList.remove("slide-none")
+        }
+        function click2_2() {
+            list2.classList.add("slide-none")
+            list1.classList.remove("slide-none")
+        }
+        function click3_1() {
+            list3.classList.add("slide-none")
+            list1.classList.remove("slide-none")
+        }
+        function click3_2() {
+            list3.classList.add("slide-none")
+            list2.classList.remove("slide-none")
+        }
+
+    </script>
+
+
+    <!--     footer        -->
+
+
+
+    <footer class="footer bg-3"><!-- 高さは100px程度 背景は黒 -->
+        <small>&copy; Rader2525 All right reserved.</small>
+        <a class="margin-a" href="https://twitter.com/radaokun" target="_blank">
+            <img class="icon" src="img/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNdVSK1uy2xFHTaXZYXopw" target="_blank">
+            <img class="icon2" src="img/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.instagram.com/radaokun/" target="_blank">
+            <img class="icon3" src="img/instagram.png" alt="insta">
+        </a>
+    </footer>
+
+</body>
+
+</html>

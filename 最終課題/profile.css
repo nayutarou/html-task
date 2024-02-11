@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+
+.flex {
+    display: flex;
+}
+
+main {
+    height: 62em;
+    width: auto;
+    background-color: azure;
+}
+
+.d-none {
+    visibility: hidden;
+    margin: auto;
+}
+
+.radar-ty {
+    margin-top: 2em;
+    font-size: 3em;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+}
+
+
+.plofile-radar {
+    justify-content: space-around;
+    background-color: #7AC5EF;
+    margin: auto;
+
+    & p {
+        margin-top: 3em;
+    }
+}
+
+.plofile section {
+    margin-top: 2.4em;
+}
+
+.plofile p {
+    margin: 1.5em 0 auto 0;
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+
+span {
+    opacity: 0;
+}
+
+@keyframes showtext {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* font  */
+
+.h2-f {
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+/*    */
+.plofile-radar {
+
+    width: 100%;
+    height: 340px;
+    background: url(img/p-bg.png) repeat-x;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-position: 0 0;
+    -webkit-animation: bgroop 20s linear infinite;
+    animation: bgroop 20s linear infinite;
+    /* border-bottom: 3px solid blue; */
+}
+
+@-webkit-keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1956px 0;
+    }
+}
+
+@keyframes bgroop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1956px 0;
+    }
+}
+
+.p-radar {
+    display: flex;
+    height: 20em;
+    transition: 5s;
+}
+
+.radar_img img {
+    /* margin: auto 0; */
+    width: auto;
+    height: 20em;
+}
+
+.p-main {
+    padding-top: 8em;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 8em;
+}
+
+.explanation {
+    margin: auto 0 2em 3em;
+}
+
+.explanation p {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.main-1 h1{
+    font-size: 4em;
+}
