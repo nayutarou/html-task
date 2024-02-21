@@ -1,19 +1,36 @@
 @charset "UTF-8";
 
 main{
-    padding-top: 6em;
+    padding-top: 10em;
+    text-align: center;
 }
+
+.index{
+    margin: auto;
+    text-align: center;
+}
+
+main img{
+    width: 60%;
+    margin-top: 1em;
+}
+
+main section{
+    font-size: 2em;
+    width: 40%;
+    margin: 30px auto;
+}
+/* 
 main img{
     margin-top: 0.5em;
     margin-left: 2em;
-    width: 13em;
+    width: 30em;
     height: auto;
     object-fit: cover;
     object-position: center;
 }
 main .block{
-    width: 13em;
-    flex-wrap: wrap;
+    width: 30em;
 }
 main .flex{
     display: flex;
@@ -26,4 +43,4 @@ main ul{
 }
 main li{
     font-size: 1.8em;
-}
+} */
